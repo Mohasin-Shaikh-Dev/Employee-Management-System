@@ -1,0 +1,5 @@
+package com.employee.www.repository;
+
+public interface EmployeeRepository {
+
+}

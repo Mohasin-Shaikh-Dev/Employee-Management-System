@@ -1,0 +1,6 @@
+package com.employee.www.exception;
+
+public class ResourceNotFoundException extends RuntimeException{
+
+	
+}

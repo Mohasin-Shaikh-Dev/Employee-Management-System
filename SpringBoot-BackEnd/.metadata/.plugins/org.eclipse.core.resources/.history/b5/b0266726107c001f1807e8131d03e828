@@ -1,0 +1,5 @@
+package com.employee.www.service;
+
+public interface EmployeeService {
+
+}
