@@ -19,7 +19,7 @@ import com.employee.www.service.EmployeeService;
 
 @CrossOrigin("*")
 @RestController
-@RequestMapping("employees")
+@RequestMapping("/api/employees")
 public class EmployeeController {
 
 	@Autowired

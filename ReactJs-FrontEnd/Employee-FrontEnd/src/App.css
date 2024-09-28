@@ -1,0 +1,17 @@
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    height: 50px;
+    text-align: center;
+    color: white;
+}
+
+.btn{
+    width: 100%;
+}
+
+.mybtn{
+    width: 30%;
+}

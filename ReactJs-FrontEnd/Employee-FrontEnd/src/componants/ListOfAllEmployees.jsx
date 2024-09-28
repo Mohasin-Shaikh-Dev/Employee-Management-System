@@ -1,21 +1,8 @@
 import React,{useEffect, useState} from 'react'
 import { listOfEmployee } from '../Services/EmployeeService';
+import { useNavigate } from 'react-router-dom';
 
 const ListOfAllEmployees = () => {
-    // to hold the data we use state  so use stateHook
-
-    //   const[employees,setEmployees]=useState([]);
-    //   useEffect(()=>{
-    //         listOfEmployee().then((response) =>{
-    //             setEmployees(response.data);
-    //         }).catch(error => {
-    //             console.error(error);
-    //         })
-    //   },[])
-
-
-
-
     const[employees,setEmployees]=useState([]);
     useEffect(()=>{
             listOfEmployee().then((response)=>{
@@ -25,9 +12,17 @@ const ListOfAllEmployees = () => {
             })
     },[])
 
+    const navigate=useNavigate();
+
+    function addNewEmployee()
+    {
+        navigate("/add-employee");
+    }
+
     return (
         <div className='container'>
             <h2 className='text-center'>List of Employees</h2>
+            <button type="button" className="btn btn-primary" onClick={addNewEmployee}>Add Employee</button>
             <table className='table table-striped table-bordered'>
                 <thead>
                     <tr>
